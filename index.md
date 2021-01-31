@@ -17,7 +17,7 @@ Bikes became in limited supply once COVID hit, and in the interests of saving mo
 The legal limit for ebikes in Ontario, Canada is 32 km/hr and 500 W. I figured 500 W was a good starting point, even though all homebuilt ebikes techincally seem to be in a gray area here anyways (a requiurement is "a permanent label from the manufacturer in both English and French stating that your e-bike conforms to the federal definition of a power-assisted bicycle" - if it's homebuilt am I the manufacturer and can just put my own sticker on?). I expect my chances of being stopped are vastly lower as long as I am going close to this legal speed on a normal looking bicycle. Also, power requirements increase with the cube of speed once air resistance becomes signficant, so going above ~40 km/hr would require significantly more power. A good amount of time of my commute is also on roads with limits of 30 or 40, and facotring in time at stop signs and stop lights, the decrease in trip time would be very marginal for any increases in top speed beyond this. Going above typical max pedal bicycle speed would also likely neccesitate more involved safety gear and certainly something better than my rim brakes. Likely beefier torque arms for my aluminum frame would also have been necessary. All in all around 500 W and 40 km/hr top speed seems like a good target to maximimize the benefits/costs.
 
 ### Motor
-Given the above requirements, I went with a Q128C 500 W geared rear hub for the motor. I chose this motor as it seemed to have a good reputation, it is freehub based so I could use it with my bike's exisitng cassette (free hubs and cassettes are higher quality than the 6-7 speed freewheels common on cheaper bikes), it is relatively stealthy/small (~128 mm diameter) and light weight (3 kg) for its power, it's avaiable in an approrpiate winding for my torque/speed requirements, and it is a good price. I went with a rear hub as I feel the weight distribution and handling/traction improvements outweigh the increased assembly difficulty. I laced the hub myself into an A719 rim I got used from my local bike coop.
+Given the above requirements, I went with a Q128C 500 W geared rear hub for the motor. I wanted a hub motor over middrive for increased reliability and reduced wear on the drivechain. I went with a geared hub as my power requirements are modest, and they are smaller and lighter than gearless hubs, important for keeping the ebike bike looking. I chose the Q128C as it seemed to have a good reputation, it is freehub based so I could use it with my bike's exisitng cassette (free hubs and cassettes are higher quality than the 6-7 speed freewheels common on cheaper bikes), it is relatively stealthy/small (~128 mm diameter) and light weight (3 kg) for its power, it's avaiable in an approrpiate winding for my torque/speed requirements, and it is a good price. I went with a rear hub as I feel the weight distribution and handling/traction improvements outweigh the increased assembly difficulty, and it's more stealthy. I laced the hub myself into an A719 rim I got used from my local bike coop.
 
 I chose the 36 V 201 RPM configuration, run at 48 V in a 700C wheel, for the speed/torque that I wanted. There's some debate about how BMSBattery chose their designations, and the 36V 201 RPM may be the same as the 48 V 328 RPM, and neither might be actually accurate for their RPM rating. In any case mine performs as expected, giving a loaded top speed of around 40 km/hr on the flat with a full charge (50 km/hr with wheel off the ground at 100% charge), and it has plenty of starting torque even controller limited to 700 W.
 
@@ -44,9 +44,9 @@ Lacing the hub into the wheel was one of the more time consuming tasks. Lacing i
 This was by far the most time consuming part of the project. Again, unless you know your way around electronics, I don't recommend others do this. It is safter and likely cheaper (especially after factoring in labor time) to buy a battery from a reputable company. Personally I wanted something which doens't exist commercially and I wanted the challenged of this custom build. I also have a good amount of experience with electronics.
 
 My battery configuration is 13s3p. It took a lot of thinking and sketching different layouts to figure out what would work best. This is the layout I ended up with: (image here)
-Cells are grouped in parallel groups of 3, and then these are all linked in series. I designed and 3D printed custom holders to hold the batteries in this configuration: (image).
+Cells are grouped in parallel groups of 3, and then these are all linked in series. I designed and 3D printed custom holders to hold the batteries in this configuration: (image). The holders are designed to keep the cells spaced apart from eachother to reduce over heating potential. The design was parameterized in CAD using coodrinates for the cells based on [circle packing theory](https://en.wikipedia.org/wiki/Circle_packing_in_a_circle) so the cells would fit within the nalgene bottle with maximum spacing and room for foam wrapping. The indents around the permiter allow the wires to pass to other tiers.
 
-I charged and discharged (with a resistor) each individual cell so they were all at the exact same starting voltage (within 0.001 V).
+I charged and discharged (with a resistor) each individual cell so they were all at the exact same starting voltage (within 0.001 V) before assembling.
 
 I soldered the cells directly using ? gauge wire. This is generally very much frowned upon. Everywhere will tell you to only spot weld metal strips to the cells, and that soldering cells directly will overheat and degrade them, and can potentially be very dangerous. This is not neccesarily wrong. That said, I do believe cells can be soldered with minimal risk to the cell or the person, if done properly and with the right cells. If I had access to a spot welder I would have done that, however for a one off battery build like this, it would have costed more than the battery itself. I believe the cell chemistry and construction of the LG MJ1 cells made them appropriate, and I had access to a soldering iron with a large tip to minimize time spent in contact. I had extra cells to practice with and ensure I only had to heat the cells for a minimal amount of time. Time will tell if the lifespan of my cells is reduced, but so far I haven't seen any noticable evidence that they are in any way degraded. If I were to redo my battery construction, I would still solder them, however I was using older wire which had a very stiff insulation, and the gauge I used was likely overkill, so I might instead have used either more flexible wire, or ideally soldered solid copper strips cut to the correct shape directly to the cells (similar to the strips used for spot welding, but perhaps more custom). The wire I used also ended up adding more bulk than anticipated, and after adding the BMS it was almost too tall to close - I had to use a good amount of force to close the last couple mm and then glue/tape it shut. 
 
@@ -68,6 +68,37 @@ I mounted the controller underneath my rear rack, and spray painted the controll
 
 ### Parts list and costs
 
+| Part | Cost (CAD) | Source | Description |
+|-------|--------|---------|---------|
+| 2018 Cannondale Quick 7 | $350 CAD | Kijiji | Midnight blue, 24 speed (11-32), Altus/Acera |
+| Q128C-135mm 500W CST Rear Driving EBike Hub Motor | $112 USD | BMSBattery | Voltage: 36V RPM: 201 |
+| S12S 500Watts Torque Simulation Sine Wave Controller | $34 USD | BMSBattery | 30 A max current |
+| A Pair of EBike Torque Arm - Size : M12 | $15 USD | BMSBattery | Old gen 1 style not typically recomended, but for 500 W and with two of them it shouldn't be an issue |
+| Spoke Wrench | $1 USD | BMSBattery | For lacing hub |
+| CASSETTE REMOVER And Install TOOL	 | $5 USD | BMSBattery | For transfering cassette from original wheel to hub |
+| S-LCD6 LCD Meter for S-Series Controllers	| $30 USD | BMSBattery | I think this vertical style looks nicer than the seemingly more common S-LCD3 |
+| Bicycle B B Axle Wrench Tools | $3 USD | BMSBattery | For installing PAS |
+| Cotterless Crank Tool	 | $1.60 USD | BMSBattery | For installing PAS |
+| PAS--Pulse Padel Assistant Sensor With 12 PCS Magnets | $5.00 | BMSBattery | I had some concerns about compatability with my controller, but it works fine and I think looks cleaner and more subtle than the other styles |
+| 5 pcs 12G Stainless Steel Spoke with a Brass Nipple (x 9) | $9 USD | BMSBattery | 240 mm length; Maybe not the best quality but they worked |
+| Dual Hall Sensor 12 Signals Easy Assembling PAS | $4.00 USD | BMSBattery | Not used, backup in case the other one didn't work |
+| Thumb Level Throttle without Handle | $4.00 | BMSBattery | The throttle I ended up using, mounted backwards on the left. An actual left handed one would probably work better. |
+| Anderson Double Poles Connector - Current Selection : 40Amps	(x 3) | $4.50 | BMSBattery |  |
+| Left Handed Half Twist Throttle | $4.00 | BMSBattery | Seems to be a fan favorite but I prefered the thumb throttle |
+| 1 meter PVC heat shrink tube - Large - Half Perimeter(mm) : 160	 | $1 USD | BMSBattery | Battery wrapping |
+| 1 meter PVC heat shrink tube - Large - Half Perimeter(mm) : 143	 | $1 USD | BMSBattery | Battery wrapping |
+| S120M MCU OLED Display LiFePo4/Li-Ion Battery Smart Charger - Power : 120W | $22 USD | BMSBattery | Smart battery charger |
+| 3 mm EVA foam | $ | Michael's |  |
+| 42x LG MJ1 18650 cells | $264.60 CAD | 18650Canada | Worked out to $6.30 CAD/cell |
+| XTAR MC1S Charger | $6.08 CAD | 18650Canada | Used to bring all cells to same starting voltage (3.7 V) (also used a big resistor to discharge if needed)|
+| HWBS - Hidden Wire Brake Sensor 1pcs | $6 | BMSBattery | Works pretty well, used just on rear brake (don't have exposed cable on front brake) |
+| BMSBattery fedex shipping + duties | $99.93 USD + 52.72 CAD| Fedex | Lacing hub myself kept shipping costs down |
+| 3D printed battery cell holders | $55 CAD |  | Printed in ABS using 3D printer at work, just paid for materials |
+| 48 oz Nalgene bottle | $11.22 CAD | Candian Tire |  |
+| Front headlight | $8.11 CAD | Aliexpress |  |
+| Rear taillight | $13.44 CAD | Aliexpress |  |
+| Battery charging controller with case | $10.79 CAD | Aliexpress | Cuts off charging at set voltage |
+| Daly 13s BMS | $23.17 CAD | Aliexpress |  |
 
 
 ## Appendix
