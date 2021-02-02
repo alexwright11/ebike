@@ -70,43 +70,43 @@ I mounted the controller underneath my rear rack, and spray painted the controll
 
 ### Parts list and costs
 
-| Part | Cost (CAD) | Source | Description |
+| Part | Cost | Source | Description |
 |-------|--------|---------|---------|
 | 2018 Cannondale Quick 7 | $350 CAD | Kijiji | Midnight blue, 24 speed (11-32), Altus/Acera |
-| Q128C-135mm 500W CST Rear Driving EBike Hub Motor | $112 USD | BMSBattery | Voltage: 36V RPM: 201 |
-| S12S 500Watts Torque Simulation Sine Wave Controller | $34 USD | BMSBattery | 30 A max current |
-| A Pair of EBike Torque Arm - Size : M12 | $15 USD | BMSBattery | Old gen 1 style not typically recomended, but for 500 W and with two of them it shouldn't be an issue |
+| Q128C-135mm 500W CST Rear Driving EBike Hub Motor | $112.00 USD | BMSBattery | Voltage: 36V RPM: 201 |
+| S12S 500Watts Torque Simulation Sine Wave Controller | $34.00 USD | BMSBattery | 30 A max current |
+| A Pair of EBike Torque Arm - Size : M12 | $15.00 USD | BMSBattery | Old gen 1 style not typically recomended, but for 500 W and with two of them it shouldn't be an issue |
 | Spoke Wrench | $1 USD | BMSBattery | For lacing hub |
-| CASSETTE REMOVER And Install TOOL	 | $5 USD | BMSBattery | For transfering cassette from original wheel to hub |
-| S-LCD6 LCD Meter for S-Series Controllers	| $30 USD | BMSBattery | I think this vertical style looks nicer than the seemingly more common S-LCD3 |
-| Bicycle B B Axle Wrench Tools | $3 USD | BMSBattery | For installing PAS |
+| CASSETTE REMOVER And Install TOOL	 | $5.00 USD | BMSBattery | For transfering cassette from original wheel to hub |
+| S-LCD6 LCD Meter for S-Series Controllers	| $30.00 USD | BMSBattery | I think this vertical style looks nicer than the seemingly more common S-LCD3 |
+| Bicycle B B Axle Wrench Tools | $3.00 USD | BMSBattery | For installing PAS |
 | Cotterless Crank Tool	 | $1.60 USD | BMSBattery | For installing PAS |
-| PAS--Pulse Padel Assistant Sensor With 12 PCS Magnets | $5.00 | BMSBattery | I had some concerns about compatability with my controller, but it works fine and I think looks cleaner and more subtle than the other styles |
-| 5 pcs 12G Stainless Steel Spoke with a Brass Nipple (x 9) | $9 USD | BMSBattery | 240 mm length; Maybe not the best quality but they worked |
+| PAS--Pulse Padel Assistant Sensor With 12 PCS Magnets | $5.00 USD | BMSBattery | I had some concerns about compatability with my controller, but it works fine and I think looks cleaner and more subtle than the other styles |
+| 5 pcs 12G Stainless Steel Spoke with a Brass Nipple (x 9) | $9.00 USD | BMSBattery | 240 mm length; Maybe not the best quality but they worked |
 | Dual Hall Sensor 12 Signals Easy Assembling PAS | $4.00 USD | BMSBattery | Not used, backup in case the other one didn't work |
-| Thumb Level Throttle without Handle | $4.00 | BMSBattery | The throttle I ended up using, mounted backwards on the left. An actual left handed one would probably work better. |
-| Anderson Double Poles Connector - Current Selection : 40Amps	(x 3) | $4.50 | BMSBattery |  |
-| Left Handed Half Twist Throttle | $4.00 | BMSBattery | Seems to be a fan favorite but I prefered the thumb throttle |
-| 1 meter PVC heat shrink tube - Large - Half Perimeter(mm) : 160	 | $1 USD | BMSBattery | Battery wrapping |
-| 1 meter PVC heat shrink tube - Large - Half Perimeter(mm) : 143	 | $1 USD | BMSBattery | Battery wrapping |
-| S120M MCU OLED Display LiFePo4/Li-Ion Battery Smart Charger - Power : 120W | $22 USD | BMSBattery | Smart battery charger |
-| 3 mm EVA foam | $ | Michael's |  |
+| Thumb Level Throttle without Handle | $4.00 USD | BMSBattery | The throttle I ended up using, mounted backwards on the left. An actual left handed one would probably work better. |
+| Anderson Double Poles Connector - Current Selection : 40Amps	(x 3) | $4.50 USD | BMSBattery |  |
+| Left Handed Half Twist Throttle | $4.00 USD | BMSBattery | Seems to be a fan favorite but I prefered the thumb throttle |
+| 1 meter PVC heat shrink tube - Large - Half Perimeter(mm) : 160	 | $1.00 USD | BMSBattery | Battery wrapping |
+| 1 meter PVC heat shrink tube - Large - Half Perimeter(mm) : 143	 | $1.00 USD | BMSBattery | Battery wrapping |
+| S120M MCU OLED Display LiFePo4/Li-Ion Battery Smart Charger - Power : 120W | $22.00 USD | BMSBattery | Smart battery charger |
+| HWBS - Hidden Wire Brake Sensor 1pcs | $6.00 USD | BMSBattery | Works pretty well, used just on rear brake (don't have exposed cable on front brake) |
+| 3 mm EVA foam | $5.92 CAD | Michael's |  |
 | 42x LG MJ1 18650 cells | $264.60 CAD | 18650Canada | Worked out to $6.30 CAD/cell |
 | XTAR MC1S Charger | $6.08 CAD | 18650Canada | Used to bring all cells to same starting voltage (3.7 V) (also used a big resistor to discharge if needed)|
-| HWBS - Hidden Wire Brake Sensor 1pcs | $6 | BMSBattery | Works pretty well, used just on rear brake (don't have exposed cable on front brake) |
 | BMSBattery fedex shipping + duties | $99.93 USD + 52.72 CAD| Fedex | Lacing hub myself kept shipping costs down |
-| 3D printed battery cell holders | $55 CAD |  | Printed in ABS using 3D printer at work, just paid for materials |
+| 3D printed battery cell holders | $55.00 CAD |  | Printed in ABS using 3D printer at work, just paid for materials |
 | 48 oz Nalgene bottle | $11.22 CAD | Candian Tire |  |
 | Front headlight | $8.11 CAD | Aliexpress |  |
 | Rear taillight | $13.44 CAD | Aliexpress |  |
 | 2x pushbutton switches, 16 mm LED latching, red and white  | $3.52 CAD | Aliexpress | For controlling lights. Accidentally blew one up.. |
-| XH-M604 Battery charging controller with case | $10.79 CAD | Aliexpress | Cuts off charging at set voltage |
+| XH-M604 Battery charging controller with case | $13.46 CAD | Aliexpress | Cuts off charging at set voltage |
 | Daly 13s BMS | $23.17 CAD | Aliexpress |  |
-| A719 rim | $20 CAD | Local bike coop |  |
-| Front and rear fenders | $20 CAD | Local bike coop |  |
+| A719 rim | $20.00 CAD | Local bike coop |  |
+| Front and rear fenders | $20.00 CAD | Local bike coop |  |
 |-------|--------|---------|---------|
-| Total, CAD | $ CAD |  | Converting all USD to CAD |
-| Total, USD | $ USD |  | Converting all CAD to USD |
+| Total, CAD | $ CAD |  | Converting all to CAD |
+| Total, USD | $ USD |  | Converting all to USD |
 
 ## Appendix
 ### References
