@@ -143,7 +143,6 @@ These are just some rough notes I took during my research process.
 |	mxus xf15c |	158mm outer diam (vs 144 for q128c). 150 ships free from pswpoer?			|	
 |bmc |	expensive? Bigger and faster (30mph)				|
 |bafang	SWXH |	(SWSK is front version)	similar to Q100, slightly bigger and more torqy, bit noisier, avial in mid speed. Greenbikekit or elifebikes. On road @ 48v without pedaling = 21 mph, 23 with pedaling (20 amps? Quieter at 14)			|
-|		non cst hub motors need dnp freewheel? 				|
 |	Bafang "8-Fun" SWX02 |	Ebikeling 500W 	comparable to q128	24 mph at 48v, 20 at 36v		|
 |	bafang cst |	500w. 2x price on bmsbattery							|	
 |	xiongda XD |	2-speed, more torque but otherwise worse than q128			|	
@@ -151,8 +150,22 @@ These are just some rough notes I took during my research process.
 |	mac |	bigger than q128, more power				|
 						
             
-            
-Battery calculations
+## Quotes regarding BMSBattery Q128C winding options
+Collected from endless-sphere/pedelecs:
+
+"I'm pretty sure that the 201 rpm 36v Q128c is actually 260 rpm and it's identical to the 48v 328 rpm Q128C, i.e. they're the same motor."
+
+"By all accounts, the 36v 201 rpm and the 48v 328 rpm are in fact the same motor apart from the label, so you can take your pick. I have the 36v 201 rpm at 48v in a 26" wheel. I have it limited to 15.5 mph, but even at that speed, it seems to be pretty efficient. It has plenty of torque, but I have a feeling that it would work better in a 26" wheel than 700C."
+
+"how 201rpm at 36V equates to 328 at 48V. I make it roughly 268"
+
+"Simple. The 201 rpm 36v motor is not 201 rpm. It's 260 rpm!"
+
+"I have a 36v 201 rpm Q128c in 700c wheel, and as far as I can tell according to the ebikes.ca simulator, it spins true at around 260 rpm at 48V. I've never tried the 48V 320rpm model."
+
+"The Q128 328 rated @ 48 Volts is, in fact a 260 version were it rated @ 36 Volts."
+
+## Battery calculations
 
 
 
