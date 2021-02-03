@@ -17,7 +17,7 @@ Bikes became in limited supply once COVID hit, and in the interests of saving mo
 The legal limit for ebikes in Ontario, Canada is 32 km/hr and 500 W. I figured 500 W was a good starting point, even though all homebuilt ebikes techincally seem to be in a gray area here anyways (a requiurement is "a permanent label from the manufacturer in both English and French stating that your e-bike conforms to the federal definition of a power-assisted bicycle" - if it's homebuilt am I the manufacturer and can just put my own sticker on?). I expect my chances of being stopped are vastly lower as long as I am going close to this legal speed on a normal looking bicycle. Also, power requirements increase with the cube of speed once air resistance becomes signficant, so going above ~40 km/hr would require significantly more power. A good amount of time of my commute is also on roads with limits of 30 or 40, and facotring in time at stop signs and stop lights, the decrease in trip time would be very marginal for any increases in top speed beyond this. Going above typical max pedal bicycle speed would also likely neccesitate more involved safety gear and certainly something better than my rim brakes. Likely beefier torque arms for my aluminum frame would also have been necessary. All in all around 500 W and 40 km/hr top speed seems like a good target to maximimize the benefits/costs.
 
 ### Motor
-Given the above requirements, I went with a Q128C 500 W geared rear hub for the motor. I wanted a hub motor over middrive for increased reliability and reduced wear on the drivechain. I went with a geared hub as my power requirements are modest, and they are smaller and lighter than gearless hubs, important for keeping the ebike looking like a normal bike. I chose the Q128C as it seemed to have a good reputation, it is freehub based so I could use it with my bike's exisitng cassette (free hubs and cassettes are higher quality than the 6-7 speed freewheels common on cheaper bikes), it is relatively stealthy/small (~128 mm diameter) and light weight (~3 kg) for its power, it's avaiable in an approrpiate winding for my torque/speed requirements, and it is a good price. I went with a rear hub as I feel the weight distribution and handling/traction improvements outweigh the increased assembly difficulty, and it's more stealthy. I laced the hub myself into an A719 rim I got used from my local bike coop.
+Given the above requirements, I went with a Q128C 500 W geared rear hub for the motor. I wanted a hub motor over middrive for increased reliability and reduced wear on the drivechain. I went with a geared hub (vs direct drive) as my power requirements are modest, they can freewheel and so can still be uesd in the (albeit unlikely) event I want to use it without power, and they are smaller and lighter than gearless hubs, important for keeping the ebike looking like a normal bike. I chose the Q128C as it seemed to have a good reputation, it is freehub based so I could use it with my bike's exisitng cassette (free hubs and cassettes are higher quality than the 6-7 speed freewheels common on cheaper bikes), it is relatively stealthy/small (~128 mm diameter) and light weight (~3 kg) for its power, it's avaiable in an approrpiate winding for my torque/speed requirements, and it is a good price. I went with a rear hub as I feel the weight distribution and handling/traction improvements outweigh the increased assembly difficulty, and it's more stealthy. I laced the hub myself into an A719 rim I got used from my local bike coop.
 
 I chose the 36 V 201 RPM configuration, run at 48 V in a 700C wheel, for the speed/torque that I wanted. There's some debate about how BMSBattery chose their designations, and the 36V 201 RPM may be the same as the 48 V 328 RPM, and neither might be actually accurate for their RPM rating. In any case mine performs as expected, giving a loaded top speed of around 40 km/hr on the flat with a full charge (50 km/hr with wheel off the ground at 100% charge), and it has plenty of starting torque even controller limited to 700 W.
 
@@ -105,14 +105,51 @@ I mounted the controller underneath my rear rack, and spray painted the controll
 | A719 rim | $20.00 CAD | Local bike coop |  |
 | Front and rear fenders | $20.00 CAD | Local bike coop |  |
 |-------|--------|---------|---------|
-| Total, CAD | $ CAD |  | Converting all to CAD |
-| Total, USD | $ USD |  | Converting all to USD |
+| Total, CAD | $1354 CAD |  | Converting all to CAD  |
+| Total, USD | $967 USD |  | Converting all to USD |
+
+Unforunately I apparenlty decided to build this at a time when the exchange rate was one of the worst it been in a couple decades (~1.4 CAD to USD), so that added to the cost. The total ended up being split pretty evenly three ways between the battery, the bike, and the motor/other electronics. I'm happy with what I got for the end price, I definetly tried to do things as cheaply as possible while still being quality, meaning ordering most parts from China and waiting for shipping, and doing the labor intenstive parts myself. I don't think I could find a similarly specced prebuilt ebike for this price, although they are getting close.
 
 ## Appendix
 ### References
 
 ### Excel sheet stuff
+These are just some rough notes I took during my research process.
+## Retailers
+| Retailer | Products/notes | 
+|-------|--------|
+| ebikelifes |	bad rep and no longer exists? Now pswpower |					
+| topbikekit |	q128c (akm-128cst) and 260 rpm option. Shipping ~200 for just wheel	 |				
+| pswpower | (g311 for 155, free shipping?)	 |					
+| ebikes.ca |	G310/G311, high quality but high price	 |				
+| greenbikekit.com |	q100cst, 100r,bpm,  swxh. Crazy shipping?? (285 for wheel kit only)	 |				
+| bmsbattery.com |	q100, q128 |					
+| cnebikes | |
+| ebikeling |	shipping 107, total 366 for 700c 36v 500w geared rear waterproof kit..   Outrider standard? Good for 20 mph on throttle @ 36v, ~24 @ 48V	 |				
 
+## Alternate hub motors
+| Motor | Notes |
+| Q100 | 	called cute by bmsbattery	17 amps to get best out of it				|
+|	Q100H |	more tourqe, frewheel body only. Ranges = low (201rpm@36), mid (260) high (328). Should use mid in 26". 260@36v=32kph no load, ~40kph @48v (no load). 260@20A ~23 mph top speed? Realistic 32 kph top speed (26" wheel 13s lipo = 55v off charger)			|	
+|	Q128 |					
+|	Q128H |	more tourqe, but frewheel body only. Get if 7 or less gears at the back. 800w rather than 500 with the c			|	
+|	Q128C |	casscette/freehub, narrower (to make room for cascette) and less power than the H. 36v 201 rpm version at 48V bat (at 52V) with 26" wheels = 22 mph on flat with steady pedaling (19 w/o pedal??). Supposedly 36v201rpm is same as 48v328 rpm and is actually 36v260rpm "I'm using the 36v 201 rpm one at 48v with a 14 amp sine wave KT controller. I get a top speed on the road of about 38km/h with 26"wheels." similar size to g310	|			
+|Q100C |	same as GBK 100CST	not available In mid speed?		201rpm version only does about 15 mph at 10s (36v?) (throttle only: 201@36v=28kph, @48v=35kph)		requires special cassete tool and 8 gear cassette freewheel (from donor bike)?|
+|	BPM2 |	bigger and more power than 128				|
+|	mxus mini |	between q100 and q128 in size				|
+|	mxus xf15c |	158mm outer diam (vs 144 for q128c). 150 ships free from pswpoer?			|	
+|bmc |	expensive? Bigger and faster (30mph)				|
+|bafang	SWXH |	(SWSK is front version)	similar to Q100, slightly bigger and more torqy, bit noisier, avial in mid speed. Greenbikekit or elifebikes. On road @ 48v without pedaling = 21 mph, 23 with pedaling (20 amps? Quieter at 14)			|
+|		non cst hub motors need dnp freewheel? 				|
+|	Bafang "8-Fun" SWX02 |	Ebikeling 500W 	comparable to q128	24 mph at 48v, 20 at 36v		|
+|	bafang cst |	500w. 2x price on bmsbattery							|	
+|	xiongda XD |	2-speed, more torque but otherwise worse than q128			|	
+|	xiongda ytw-06 |	even smaller than q100			|				
+|	mac |	bigger than q128, more power				|
+						
+            
+            
+Battery calculations
 
 
 
