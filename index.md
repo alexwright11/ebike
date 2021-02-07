@@ -118,6 +118,11 @@ Unforunately I apparenlty decided to build this at a time when the exchange rate
 ### Excel sheet stuff
 These are just some rough notes I took during my research process.
 ## Retailers
+
+| Retailer | Products/notes | 
+|-------|--------|
+| ebikelifes |	bad rep and no longer exists? Now pswpower |
+
 | Retailer | Products/notes | 
 |-------|--------|
 | ebikelifes |	bad rep and no longer exists? Now pswpower |					
