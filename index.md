@@ -165,9 +165,35 @@ Collected from endless-sphere/pedelecs:
 
 "The Q128 328 rated @ 48 Volts is, in fact a 260 version were it rated @ 36 Volts."
 
+"Lets get one thing straight: A Q100 at 15 amps will make more or less the same power as a Q128 at 15 amps."
+
+"48v and 15A is about as high as you can go on a Q100, but you can go to at least 20A with a Q128."
+
+"How a hub-motor behaves, depends on the controller. If you don't set a speed limit, the power will ramp down and fade out as it approaches maximum rpm.
+There are basically 3 flavours of Qxxx motors:
+201 rpm = 15 mph (real OTR speed)
+260 rpm = 19 mph
+328 rpm = 24 mph"
+
+"When you run a 36v 201 rpm at 48v, it becomes a 260 rpm one, and a 260 rpm one becomes a 48v one."
+
+"BMSB listing details are often incorrect. We know that the 201 rpm 36v Q128C is actually 260 rpm."
+
 ## Battery calculations
 
-
+| Retailer | Products/notes | 
+|-------|--------|
+|Cell type|	18650	|18650	|18650	|21700	|26650	|20700B	|18650	|18650	|
+|	|30q|	sanyo GA 3450|	35e|	40t|	MNKE| 	sanyo| 	LG MJ1|	25r|	18650bd|
+|18650 canada prices|	7.85|	8.6|	7.6|	10|	5.85|	9.85|	7|	5.95|	6.8|
+|1p cap|	3|	3.5|	3.5|	4|	5|	4.25|	3.5|	2.5|	3.18|
+|cost|	102.05|	111.8|	98.8|	130|	76.05|	128.05|	91|	77.35|	88.4|
+|2p cap	|6|	7|	7|	8|	10|	8.5|	7|	5|	6.36|
+|cost|	204.1|	223.6|	197.6|	260|	152.1|	256.1|	182|	154.7|	176.8|
+|3p cap	|9|	10.5|	10.5|	12|	15|	12.75|	10.5|	7.5|	9.54|
+|cost|	306.15|	335.4|	296.4|	390|	228.15|	384.15|	273|	232.05|	265.2|
+|cont amps per|	15|	10|	8|	30|	20|	15 (75d cut)|	10|	20|	10|
+|/aH|	34.01666667|	31.94285714|	28.22857143|	32.5|	15.21|	30.12941176|	26|	30.94|	27.79874214|
 
 
 ou can use the [editor on GitHub](https://github.com/alexwright11/ebike/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
