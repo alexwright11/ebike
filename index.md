@@ -181,7 +181,7 @@ There are basically 3 flavours of Qxxx motors:
 
 ## Battery calculations
 
-| Retailer | Products/notes | ||||||||||
+| Retailer | Products/notes | | | | | | | | |
 |-------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 |Cell type|	18650	|18650	|18650	|21700	|26650	|20700B	|18650	|18650	|18650|
 |	|30q|	sanyo GA 3450|	35e|	40t|	MNKE| 	sanyo| 	LG MJ1|	25r|	18650bd|
