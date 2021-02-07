@@ -106,7 +106,6 @@ I mounted the controller underneath my rear rack, and spray painted the controll
 | Daly 13s BMS | $23.17 CAD | Aliexpress |  |
 | A719 rim | $20.00 CAD | Local bike coop |  |
 | Front and rear fenders | $20.00 CAD | Local bike coop |  |
-|-------|--------|---------|---------|
 | Total, CAD | $1354 CAD |  | Converting all to CAD  |
 | Total, USD | $967 USD |  | Converting all to USD |
 
@@ -118,10 +117,6 @@ Unforunately I apparenlty decided to build this at a time when the exchange rate
 ### Excel sheet stuff
 These are just some rough notes I took during my research process.
 ## Retailers
-
-| Retailer | Products/notes | 
-|-------|--------|
-| ebikelifes |	bad rep and no longer exists? Now pswpower |
 
 | Retailer | Products/notes | 
 |-------|--------|
