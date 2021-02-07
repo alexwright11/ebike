@@ -131,22 +131,22 @@ These are just some rough notes I took during my research process.
 
 ## Alternate hub motors
 | Motor | Notes |
-|-------|--------|
+|-|-|
 | Q100 | 	called cute by bmsbattery	17 amps to get best out of it				|
-|	Q100H |	more tourqe, frewheel body only. Ranges = low (201rpm@36), mid (260) high (328). Should use mid in 26". 260@36v=32kph no load, ~40kph @48v (no load). 260@20A ~23 mph top speed? Realistic 32 kph top speed (26" wheel 13s lipo = 55v off charger)			|	
+|	Q100H |	more tourqe, frewheel body only. Ranges = low (201rpm@36), mid (260) high (328). Should use mid in 26". 260@36v=32kph no load, ~40kph @48v (no load). 260@20A ~23 mph top speed? Realistic 32 kph top speed (26" wheel 13s lipo = 55v off charger)			|
 |	Q128 |					
-|	Q128H |	more tourqe, but frewheel body only. Get if 7 or less gears at the back. 800w rather than 500 with the c			|	
-|	Q128C |	casscette/freehub, narrower (to make room for cascette) and less power than the H. 36v 201 rpm version at 48V bat (at 52V) with 26" wheels = 22 mph on flat with steady pedaling (19 w/o pedal??). Supposedly 36v201rpm is same as 48v328 rpm and is actually 36v260rpm "I'm using the 36v 201 rpm one at 48v with a 14 amp sine wave KT controller. I get a top speed on the road of about 38km/h with 26"wheels." similar size to g310	|			
+|	Q128H |	more tourqe, but frewheel body only. Get if 7 or less gears at the back. 800w rather than 500 with the c			|
+|	Q128C |	casscette/freehub, narrower (to make room for cascette) and less power than the H. 36v 201 rpm version at 48V bat (at 52V) with 26" wheels = 22 mph on flat with steady pedaling (19 w/o pedal??). Supposedly 36v201rpm is same as 48v328 rpm and is actually 36v260rpm "I'm using the 36v 201 rpm one at 48v with a 14 amp sine wave KT controller. I get a top speed on the road of about 38km/h with 26"wheels." similar size to g310	|
 |Q100C |	same as GBK 100CST	not available In mid speed?		201rpm version only does about 15 mph at 10s (36v?) (throttle only: 201@36v=28kph, @48v=35kph)		requires special cassete tool and 8 gear cassette freewheel (from donor bike)?|
 |	BPM2 |	bigger and more power than 128				|
 |	mxus mini |	between q100 and q128 in size				|
-|	mxus xf15c |	158mm outer diam (vs 144 for q128c). 150 ships free from pswpoer?			|	
+|	mxus xf15c |	158mm outer diam (vs 144 for q128c). 150 ships free from pswpoer?			|
 |bmc |	expensive? Bigger and faster (30mph)				|
 |bafang	SWXH |	(SWSK is front version)	similar to Q100, slightly bigger and more torqy, bit noisier, avial in mid speed. Greenbikekit or elifebikes. On road @ 48v without pedaling = 21 mph, 23 with pedaling (20 amps? Quieter at 14)			|
 |	Bafang "8-Fun" SWX02 |	Ebikeling 500W 	comparable to q128	24 mph at 48v, 20 at 36v		|
-|	bafang cst |	500w. 2x price on bmsbattery							|	
-|	xiongda XD |	2-speed, more torque but otherwise worse than q128			|	
-|	xiongda ytw-06 |	even smaller than q100			|				
+|	bafang cst |	500w. 2x price on bmsbattery							|
+|	xiongda XD |	2-speed, more torque but otherwise worse than q128			|
+|	xiongda ytw-06 |	even smaller than q100			|
 |	mac |	bigger than q128, more power				|
 						
             
