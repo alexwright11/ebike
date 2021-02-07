@@ -181,9 +181,9 @@ There are basically 3 flavours of Qxxx motors:
 
 ## Battery calculations
 
-| Retailer | Products/notes | 
-|-------|--------|
-|Cell type|	18650	|18650	|18650	|21700	|26650	|20700B	|18650	|18650	|
+| Retailer | Products/notes | ||||||||||
+|-------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|Cell type|	18650	|18650	|18650	|21700	|26650	|20700B	|18650	|18650	|18650|
 |	|30q|	sanyo GA 3450|	35e|	40t|	MNKE| 	sanyo| 	LG MJ1|	25r|	18650bd|
 |18650 canada prices|	7.85|	8.6|	7.6|	10|	5.85|	9.85|	7|	5.95|	6.8|
 |1p cap|	3|	3.5|	3.5|	4|	5|	4.25|	3.5|	2.5|	3.18|
