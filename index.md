@@ -2,6 +2,7 @@
 This is a writeup of my ebike hub conversion. Building an ebike for commuting to work was something I've wanted to do for a while, and COVID was the perfect justification, as an ebike would enable me to skip the crowded bus. As of January I've put over 2000 km on the bike and my only regret is not having built it sooner. The bulk of my knowledge came from the endless-sphere and pedelecs forums, as well as the reddit ebike subreddit/discord, and of course various youtube videos. 
 
 ## Finished Product
+![Finished ebike](/assets/kijiji.PNG)
 The end result was a Cannondale Quick 7 converted with a Q128C 500 W hub motor and a 48 V 10.5 Ah battery custom built into a 1.5 L nalgene water bottle. 
 
 ## Overview
@@ -134,6 +135,8 @@ These are just some rough notes I took during my research process.
 |	Q100H |	more tourqe, frewheel body only. Ranges = low (201rpm@36), mid (260) high (328). Should use mid in 26". 260@36v=32kph no load, ~40kph @48v (no load). 260@20A ~23 mph top speed? Realistic 32 kph top speed (26" wheel 13s lipo = 55v off charger)			|
 |	Q128 |			|		
 |	Q128H |	more tourqe, but frewheel body only. Get if 7 or less gears at the back. 800w rather than 500 with the c			|
+
+
 |	Q128C |	casscette/freehub, narrower (to make room for cascette) and less power than the H. 36v 201 rpm version at 48V bat (at 52V) with 26" wheels = 22 mph on flat with steady pedaling (19 w/o pedal??). Supposedly 36v201rpm is same as 48v328 rpm and is actually 36v260rpm "I'm using the 36v 201 rpm one at 48v with a 14 amp sine wave KT controller. I get a top speed on the road of about 38km/h with 26"wheels." similar size to g310	|
 |Q100C |	same as GBK 100CST	not available In mid speed?		201rpm version only does about 15 mph at 10s (36v?) (throttle only: 201@36v=28kph, @48v=35kph)		requires special cassete tool and 8 gear cassette freewheel (from donor bike)?|
 |	BPM2 |	bigger and more power than 128				|
