@@ -129,11 +129,10 @@ These are just some rough notes I took during my research process.
 | ebikeling |	shipping 107, total 366 for 700c 36v 500w geared rear waterproof kit..   Outrider standard? Good for 20 mph on throttle @ 36v, ~24 @ 48V	 |				
 
 ## Alternate hub motors
+
 | Motor | Notes |
-|----|----|
-| Q100 | 	called cute by bmsbattery	17 amps to get best out of it				|
-
-
+|-----|-----|
+| Q100C | Casette version, lower power than H |
 |	Q100H |	more tourqe, frewheel body only. Ranges = low (201rpm@36), mid (260) high (328). Should use mid in 26". 260@36v=32kph no load, ~40kph @48v (no load). 260@20A ~23 mph top speed? Realistic 32 kph top speed (26" wheel 13s lipo = 55v off charger)			|
 |	Q128 |			|		
 |	Q128H |	more tourqe, but frewheel body only. Get if 7 or less gears at the back. 800w rather than 500 with the c			|
