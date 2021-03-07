@@ -5,16 +5,16 @@ This is a writeup of my ebike hub conversion. Building an ebike for commuting to
 
 
 
-[<img src="/assets/IMG_5502_th.jpeg" width="250" alt="Mostly finished bike">](/assets/IMG_5502.jpeg)
+[<img src="assets/IMG_5502_th.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_5502.jpeg)
 
-The end result was a Cannondale Quick 7 converted with a Q128C 500 W hub motor and a 48 V 10.5 Ah battery custom built into a 1.5 L nalgene water bottle. 
+The end result was a Cannondale Quick 7 converted with a Q128C 500 W hub motor and a 48 V 10.5 Ah battery built into a 1.5 L nalgene water bottle. 
 
 ## Overview
 ### Goals
-I wanted my ebike to make commuting effortless while being somewhat legal, look like a normal bike, be reliable and long lasting, and of course minimize cost.
+I wanted my ebike to make commuting effortless while looking mostly like a normal bike, be reliable and long lasting, mostly legal, and of course minimize cost.
 
 ### Bike base
-Bikes became in limited supply once COVID hit, and in the interests of saving money I wanted to buy used. I was checking kijiji multiple times a day for a few weeks before I found this bike, a seeminly barley used 2018 Cannondale Quick 7 which I haggled down to $350 CAD. Given the COVID market I think this was a great deal. I chose a bike with rim brakes mainly as it can be difficult to mount some hub motors with disk brakes. This is generally solvable by upgrading to larger disks (i.e. 200 mm), and in hindsight this is the one thing I might have changed, although so far the rim brakes have proven more than sufficient and of course a quality bike with disk brakes would also have increased the costs not insignificantly, particularly if I wanted hydraulics. From what I hear the main advantage of disk brakes is for wet weather, although I am generally trying to avoid the wettest or snowiest days anyway. 
+Bikes became in limited supply once COVID hit, including the used market, so I was checking kijiji multiple times a day for a few weeks before I found this bike, a lightly used 2018 Cannondale Quick 7 which I haggled down to $350 CAD. Given the COVID market I think this was a great deal. I chose a bike with rim brakes mainly as it can be difficult to mount some hub motors with disk brakes. This is generally solvable by upgrading to larger disks (i.e. 200 mm), and in hindsight this is the one thing I might have changed and gone with a bike with disk brakes, although so far the rim brakes have proven more than sufficient and of course a quality bike with disk brakes would also have increased the costs not insignificantly, particularly if I wanted hydraulics. From what I hear the main advantage of disk brakes is for wet weather, and I am generally trying to avoid the wettest or snowiest days anyway. 
 Original bike ad |
 :-------------------------:|
 [<img src="assets/kijiji_th.PNG" width="250" alt="Kijiji ad I responded to, haggled down to $350">](assets/kijiji.PNG)
@@ -52,16 +52,46 @@ This was by far the most time consuming part of the project. Again, unless you k
 
 The goal was to fit the battery inside a water bottle, to make the ebike look less like an ebike. This has been done before but with typically a much smaller number of cells or with lipo pouch cells. I haven't seen anyone build one of this size, 13s3p, or larger. The commercial ones are also the only one's I've seen in 'water bottle style' (but still not like a normal bottle) that have a  BMS, which I felt was essential for balancing and safety, but the commercial ones are also smaller capacity (Max 10s3p). I looked at a number of different bottles, steel and plastic, but the 48 oz (1.5 L) nalgene seemed the best fit, with both a large diameter and a tall enough height. I was also able to find it on clearance for $10. I cut the top off with a bandsaw and sanded both sides flat. I drilled two holes and added rubber gromits for the power wires to exit while maintaining waterproofing.
 
-My battery configuration is 13s3p. It took a lot of thinking and sketching different layouts to figure out what would work best. This is the layout I ended up with: (image here)
-Cells are grouped in parallel groups of 3, and then these are all linked in series. I designed and 3D printed custom holders to hold the batteries in this configuration: (image). The holders are designed to keep the cells spaced apart from eachother to reduce over heating potential. The design was parameterized in CAD using coodrinates for the cells based on [circle packing theory](https://en.wikipedia.org/wiki/Circle_packing_in_a_circle) so the cells would fit within the nalgene bottle with maximum spacing and room for foam wrapping. The indents around the permiter allow the wires to pass to other tiers. I planned on using insulating washers on the positive terminals to protect against potential shorts, but they didn't arrive in time, so I designed the positive terminal holes in the 3D printed holder to have extra plastic around them instead.
+My battery configuration is 13s3p. It took a lot of thinking and sketching different layouts to figure out what would work best. This is the layout I ended up with: 
+
+Battery layout             |  Configuration as viewed from above
+:-------------------------:|:-------------------------:
+[<img src="assets/battery_layout1_th.png" width="250" alt="13s3p Battery layout, as viewed from above">](assets/battery_layout1.png)  |  [<img src="assets/battery_layout2_th.png" width="250" alt="13s3p Battery layout, as viewed from above">](assets/battery_layout2.png)
+
+Cells are grouped in parallel groups of 3, and then these are all linked in series. I designed and 3D printed custom holders to hold the batteries in this configuration: 
+
+3D printed cell holders             |  Holders with cells | Stacked height relative to nalgene bottle
+:-------------------------:|:-------------------------:|:-------------------------:
+[<img src="assets/IMG_2835_th.jpeg" width="250" alt="3D printed cell holders with a single 18650">](assets/IMG_2835.jpeg)  |  [<img src="assets/IMG_2845_th.jpeg" width="250" alt="Filled 3 sets that will be stacked on top of each other">](assets/IMG_2845.jpeg)|  [<img src="assets/IMG_2847_th.jpeg" width="250" alt="Stacked height relative to nalgene bottle">](assets/IMG_2847.jpeg)
+
+The holders are designed to keep the cells spaced apart from eachother to reduce over heating potential. The design was parameterized in CAD using coodrinates for the cells based on [circle packing theory](https://en.wikipedia.org/wiki/Circle_packing_in_a_circle) so the cells would fit within the nalgene bottle with maximum spacing and room for foam wrapping. The indents around the permiter allow the wires to pass to other tiers. I planned on using insulating washers on the positive terminals to protect against potential shorts, but they didn't arrive in time, so I designed the positive terminal holes in the 3D printed holder to have extra plastic around them instead.
 
 I charged (with a single 18650 USB charger) and discharged (with a resistor) each individual cell so they were all at the exact same starting voltage (within 0.001 V) before assembling.
 
+| Initial testing of cells |
+|:-------------------------:|
+|  [<img src="assets/IMG_2840_th.jpeg" width="250" alt="Initial testing of cells">](assets/IMG_2840.jpeg) |
+
+
 I soldered the cells directly using ? gauge wire. This is generally very much frowned upon. Everywhere will tell you to only spot weld metal strips to the cells, and that soldering cells directly will overheat and degrade them, and can potentially be very dangerous. This is not neccesarily wrong. That said, I do believe cells can be soldered with minimal risk to the cell or the person, if done properly and with the right cells. If I had access to a spot welder I would have done that, however for a one off battery build like this, it would have costed more than the battery itself. I believe the cell chemistry and construction of the LG MJ1 cells made them appropriate, and I had access to a soldering iron with a large tip to minimize time spent in contact. I had extra cells to practice with and ensure I only had to heat the cells for a minimal amount of time. Time will tell if the lifespan of my cells is reduced, but so far I haven't seen any noticable evidence that they are in any way degraded. If I were to redo my battery construction, I would still solder them, however I was using older thick gauge stranded wire which had a very stiff insulation, and the gauge I used was likely overkill, so I might instead have used either more flexible wire, or ideally soldered solid copper strips cut to the correct shape directly to the cells (similar to the strips used for spot welding, but perhaps more custom). The wire I used also ended up adding more bulk than anticipated, and after adding the BMS it was almost too tall to close - I had to use a good amount of force to close the last couple mm and then glue/tape it shut. 
+
+Tapping up areas not being soldered to avoid unintentional shorts             |  Tinning each cell | Wire soldered on
+:-------------------------:|:-------------------------:|:-------------------------:
+[<img src="assets/IMG_2850_th.jpeg" width="250" alt="Tapping up areas not being soldered to avoid unintentional shorts">](assets/IMG_2850.jpeg)  |  [<img src="assets/IMG_2856_th.jpeg" width="250" alt="Tinning each cell">](assets/IMG_2856.jpeg)|  [<img src="assets/IMG_2859_th.jpeg" width="250" alt="Wire soldered on">](assets/IMG_2859.jpeg)
+
+Covering each layer with insulating tape             |  
+:-------------------------:|
+[<img src="assets/IMG_2869_th.jpeg" width="250" alt="Covering each layer with insulating tape">](assets/IMG_2869.jpeg)  |  
 
 I used a DALY 13s, 20 A 48 V BMS with balancing capability. I would have liked to have gone for a larger current one ideally, however I was constrained by space within my battery. I needed the BMS to fit horizontally on top of the battery, and this is the smallest appropriately sized BMS I could find, and even with this one it was borderline. The BMS wires were also soldered directly to the wires attached to the cells, which was a bit of a pain to get all the connections soldered properly. The BMS sits on the top of the back, just under the screw top.
 
-The battey is wrapped in a layer of 3 mm EVA foam for protection, and a thicker rubber piece on the bottom for shock absorption. The wrapped battery was sealed with blue pvc heat shrink to keep everything tightly together and to match the blue water bottle, so it looks less like a battery. 
+Wiring up BMS             |  
+:-------------------------:|
+[<img src="assets/IMG_3808_th.jpeg" width="250" alt="Wiring up BMS">](assets/IMG_3808.jpeg)  |  
+
+The battey is wrapped in a layer of 3 mm EVA foam for protection, as well as with foam between each of the 3 layers, and a thicker rubber piece on the bottom for shock absorption. The wrapped battery was sealed with blue pvc heat shrink to keep everything tightly together and to match the blue water bottle, so it looks less like a battery. 
+
+
 
 I ran this without a BMS while I was waiting for it to arrive, and checked the individual cells at arond 250 and 500 km, and in both cases the biggest cell voltage difference was 0.006 V, with most being within 0.002 V of each other. This gave me the confidence to generally charge only to below 80%, and do a full charge to 100% only every 1000 or so km, to balance the cells. 
 
@@ -70,19 +100,20 @@ I am using 40 amp (supposedly) anderson double pole connectors. They aren't perf
 I am using an XH-M604 charging controller which I attached a barrel plug and socket to so it could be connected inline between the battery and wall charger. This lets me set the upper cut-off voltage to charge the battery to only 75 or 80%. I combine this with a wall socket timer to turn the socket off after 3 hours. In total this gives me 4 independant cut-offs to avoid overcharging the battery (wall charger autocut off at 100%, BMS cutoff at 100%, XH-M604 cutoff at custom %, and wall socket timer).
 
 
-Battery layout             |  Configuration as viewed from above | Initial testing of cells
-:-------------------------:|:-------------------------:|:-------------------------:
-[<img src="/assets/battery_layout1_th.png" width="250" alt="13s3p Battery layout, as viewed from above">](/assets/battery_layout1.png)  |  [<img src="/assets/battery_layout2_th.png" width="250" alt="13s3p Battery layout, as viewed from above">](/assets/battery_layout2.png) |  [<img src="/assets/IMG_2840_th.jpeg" width="250" alt="Initial testing of cells">](/assets/IMG_2840.jpeg)
-
-Cells placed in 3D printed holders             |  Configuration as viewed from above | Initial testing of cells
-:-------------------------:|:-------------------------:|:-------------------------:
-[<img src="/assets/IMG_2845_th.jpeg" width="250" alt="Cells placed in 3D printed holders">](/assets/IMG_2845.jpeg)  |  [<img src="/assets/battery_layout2_th.png" width="250" alt="13s3p Battery layout, as viewed from above">](/assets/battery_layout2.png) |  [<img src="/assets/IMG_2840_th.jpeg" width="250" alt="Initial testing of cells">](/assets/IMG_2840.jpeg)
 
 ### Battery bottle 'cage'
 Although my battery is built into a water bottle, given that it weights x kg and is much larger than the average bicycle bottle, I needed a custom holder. There are some oversized bottle cages available, however they aren't cheap and I do not neccessarily trust their ability to hold this amount of weight. Likely one of the ones with straps might have worked fine (LiterCage? Blackburn Outpost?) but why buy something when you can make it. I machined my bottle holder out of aluminum. The top and bottom curves were machined with a boring head on a mill to match the curavuture of the nalgene bottle and down tube. A plate on the bottom was cut to shape with a bandsaw/belt sander and bolted on, to support the bottom of the bottle. Slots were milled to allow two velcro straps to secure the bottle to the holder. The holder is bolted to the downtube with the standard m5 bottle cage bolts.
 
+Machining bottle holder on mill             |  Curves machined to match bottle on one side and down tube on other | Finished and spray painted
+:-------------------------:|:-------------------------:|:-------------------------:
+[<img src="assets/IMG_2958_th.jpeg" width="250" alt="Machining bottle holder on mill with boring head">](assets/IMG_2958.jpeg)  |  [<img src="assets/IMG_2959_th.jpeg" width="250" alt="Curves machined to match bottle on one side and down tube on other">](assets/IMG_2959.jpeg)|  [<img src="assets/IMG_3966_th.jpeg" width="250" alt="Finished and spray painted">](assets/IMG_3966.jpeg)
+
 ### Controller mounting and Torque arms
-I mounted the controller underneath my rear rack, and spray painted the controller and rack black to make it less noticable. I had to raise the rack to fit the controller between it and the rear fenders. I originally machined seperate extension pieces to raise up the rack, and used the torque arms on both sides as intended with the hose clamps, however I realized I could combine both functions into one part making things simpler and cleaner. I was not a fan of the hose clamp solution as it would scratch paint, looked bad, and I felt it was not as strong. Instead I was able to machine small brackets to connect the torque arm to the rack legs and the rack mounting holes, securing everything with m5 bolts. Considering I am only running a 500 W hub this should be plenty strong. I also replaced the rack arms with an aluminum sheet I cut and bent arms onto, in order to accommodate the increased height of the rack and also to hide the wires coming from the controller and make things look neater. The wires were run along the top and down tubes and ziptied in place.
+I mounted the controller underneath my rear rack, and spray painted both the controller and the rear rack black to make it less noticable. I had to raise the rack to fit the controller between it and the rear fenders. I originally machined seperate extension pieces to raise up the rack, and used the torque arms on both sides as intended with the hose clamps, however I realized I could combine both functions into one part making things simpler and cleaner. I was not a fan of the hose clamp solution as it would scratch paint, looked bad, and I felt it was not as strong. Instead I was able to machine small brackets to connect the torque arm to the rack legs and the rack mounting holes, securing everything with m5 bolts. Considering I am only running a 500 W hub this should be plenty strong. I also replaced the rack arms with an aluminum sheet I cut and bent arms onto, in order to accommodate the increased height of the rack and also to hide the wires coming from the controller and make things look neater, and also spray painted this black. The wires were run along the top and down tubes and ziptied in place, and then are hidden under the custom rack arm with a large heatshrink tube.
+
+Finished bike             |  
+:-------------------------:|
+[<img src="assets/IMG_5502_th.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_5502.jpeg)
 
 
 
