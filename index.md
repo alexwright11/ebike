@@ -17,7 +17,7 @@ I wanted my ebike to make commuting effortless while being somewhat legal, look 
 Bikes became in limited supply once COVID hit, and in the interests of saving money I wanted to buy used. I was checking kijiji multiple times a day for a few weeks before I found this bike, a seeminly barley used 2018 Cannondale Quick 7 which I haggled down to $350 CAD. Given the COVID market I think this was a great deal. I chose a bike with rim brakes mainly as it can be difficult to mount some hub motors with disk brakes. This is generally solvable by upgrading to larger disks (i.e. 200 mm), and in hindsight this is the one thing I might have changed, although so far the rim brakes have proven more than sufficient and of course a quality bike with disk brakes would also have increased the costs not insignificantly, particularly if I wanted hydraulics. From what I hear the main advantage of disk brakes is for wet weather, although I am generally trying to avoid the wettest or snowiest days anyway. 
 Original bike ad |
 :-------------------------:|
-[<img src="/assets/kijiji_th.PNG" width="250" alt="Kijiji ad I responded to, haggled down to $350">](/assets/kijiji.PNG)
+[<img src="assets/kijiji_th.PNG" width="250" alt="Kijiji ad I responded to, haggled down to $350">](assets/kijiji.PNG)
 
 
 ### Power and speed
