@@ -109,7 +109,19 @@ Machining bottle holder on mill             |  Curves machined to match bottle o
 [<img src="assets/IMG_2958_th.jpeg" width="250" alt="Machining bottle holder on mill with boring head">](assets/IMG_2958.jpeg)  |  [<img src="assets/IMG_2959_th.jpeg" width="250" alt="Curves machined to match bottle on one side and down tube on other">](assets/IMG_2959.jpeg)|  [<img src="assets/IMG_3966_th.jpeg" width="250" alt="Finished and spray painted">](assets/IMG_3966.jpeg)
 
 ### Controller mounting and Torque arms
-I mounted the controller underneath my rear rack, and spray painted both the controller and the rear rack black to make it less noticable. I had to raise the rack to fit the controller between it and the rear fenders. I originally machined seperate extension pieces to raise up the rack, and used the torque arms on both sides as intended with the hose clamps, however I realized I could combine both functions into one part making things simpler and cleaner. I was not a fan of the hose clamp solution as it would scratch paint, looked bad, and I felt it was not as strong. Instead I was able to machine small brackets to connect the torque arm to the rack legs and the rack mounting holes, securing everything with m5 bolts. Considering I am only running a 500 W hub this should be plenty strong. I also replaced the rack arms with an aluminum sheet I cut and bent arms onto, in order to accommodate the increased height of the rack and also to hide the wires coming from the controller and make things look neater, and also spray painted this black. The wires were run along the top and down tubes and ziptied in place, and then are hidden under the custom rack arm with a large heatshrink tube.
+I mounted the controller underneath my rear rack, and spray painted both the controller and the rear rack black to make it less noticable. I had to raise the rack to fit the controller between it and the rear fenders. I originally machined seperate extension pieces to raise up the rack, and used the torque arms on both sides as intended with the hose clamps, however I realized I could combine both functions into one part making things simpler and cleaner. I was not a fan of the hose clamp solution as it would scratch paint, looked bad, and I felt it was not as strong. Instead I was able to machine small brackets to connect the torque arm to the rack legs and the rack mounting holes, securing everything with m5 bolts. Considering I am only running a 500 W hub this should be plenty strong. I also replaced the rack arms with an aluminum sheet I cut and bent arms onto, in order to accommodate the increased height of the rack and also to hide the wires coming from the controller and make things look neater, and also spray painted this black. Update Feb 2022: The sheet metal piece that connects the top of the rack to to the bike and hides all the wiring went through a few revisions before settling on this version. The wires were run along the top and down tubes and ziptied in place, and then are hidden under the custom rack arm..
+
+Wiring Diagram             |  
+:-------------------------:|
+[<img src="assets/IMG_1764.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_1764.jpeg)
+
+Sheet metal piece dimensions             |  
+:-------------------------:|
+[<img src="assets/IMG_1763.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_1763.jpeg)
+
+Wiring covering/rack mounting sheet metal piece             |  
+:-------------------------:|
+[<img src="assets/IMG_1509_th.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_1509.jpeg)
 
 Finished bike             |  
 :-------------------------:|
