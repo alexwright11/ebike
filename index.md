@@ -113,15 +113,15 @@ I mounted the controller underneath my rear rack, and spray painted both the con
 
 Wiring Diagram             |  
 :-------------------------:|
-[<img src="assets/IMG_1764.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_1764.jpeg)
+[<img src="assets/IMG_1764.jpg" width="250" alt="Mostly finished bike">](assets/IMG_1764.jpg)
 
 Sheet metal piece dimensions             |  
 :-------------------------:|
-[<img src="assets/IMG_1763.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_1763.jpeg)
+[<img src="assets/IMG_1763.jpg" width="250" alt="Mostly finished bike">](assets/IMG_1763.jpg)
 
 Wiring covering/rack mounting sheet metal piece             |  
 :-------------------------:|
-[<img src="assets/IMG_1509_th.jpeg" width="250" alt="Mostly finished bike">](assets/IMG_1509.jpeg)
+[<img src="assets/IMG_1509.jpg" width="250" alt="Mostly finished bike">](assets/IMG_1509.jpg)
 
 Finished bike             |  
 :-------------------------:|
