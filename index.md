@@ -48,7 +48,7 @@ Lacing the hub into the wheel was one of the more time consuming tasks. Lacing i
 
 Spoke length calcualtion |
 :-------------------------:|
-[<img src="assets/spokeLength.png" width="250" alt="Spoke length calculator">](assets/spokeLength.PNG)
+[<img src="assets/spokeLength.png" width="250" alt="Spoke length calculator">](assets/spokeLength.png)
 
 ### Battery
 This was by far the most time consuming part of the project. Again, unless you know your way around electronics, I don't recommend others do this. It is safter and likely cheaper (especially after factoring in labor time) to buy a battery from a reputable company. Personally I wanted something which doens't exist commercially and I wanted the challenged of this custom build. I also have a good amount of experience with electronics.
